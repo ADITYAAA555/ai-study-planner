@@ -4,9 +4,14 @@ from simulator import predict_trajectories   # <-- NEW IMPORT
 
 app = Flask(__name__)
 
+<<<<<<< HEAD
 # MongoDB Atlas connection (replace with your own)
 app.config["MONGO_URI"] = "mongodb+srv://adityapatidar1810_db_user:Df8mECWr19ZmIs8O@cluster0.c3ofyk3.mongodb.net/academic_db?retryWrites=true&w=majority"
 
+=======
+# MongoDB connection
+app.config["MONGO_URI"] = "mongodb+srv://adityapatidar1810_db_user:Df8mECWr19ZmIs8O@cluster0.c3ofyk3.mongodb.net/academic_db?retryWrites=true&w=majority"
+>>>>>>> 886189ac083a95709f2c7e3fdd2ee124ff214503
 mongo = PyMongo(app)
 
 # Home Route
